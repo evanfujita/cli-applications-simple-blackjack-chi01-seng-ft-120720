@@ -55,11 +55,8 @@ def runner
   welcome 
   card_total = initial_round
     until card_total > 21 do
-      if hit?(card_total) == "s"
-        hit?(card_total)
-      
-      end
+      hit?(card_total)
     end
-  puts "Your cards add up to #{card_total}"
+    display_card_total(card_total)   
 end
     
