@@ -56,10 +56,8 @@ def runner
   count = 0
   welcome 
   card_total = initial_round
-  if card_total < 21 && count < 2
-       if hit?(card_total) == "s"
-       hit?(card_total)
-       count += 1
+  until card_total > 21
+       card_total += hit?(card_total)
      end
   end
   display_card_total(card_total)   
