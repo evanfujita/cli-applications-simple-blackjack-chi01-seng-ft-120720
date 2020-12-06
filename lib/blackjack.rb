@@ -56,7 +56,9 @@ def runner
   card_total = initial_round
     until card_total > 21 do
       hit?(card_total)
-      end_game(card_total)
+      if hit?(card_total) == "s"
+        hit?(card_total)
+      end
     end
   end_game(card_total)  
 end
