@@ -60,6 +60,6 @@ def runner
         hit?(card_total)
       end
     end
-  end_game(card_total)  
+  puts "Your cards add up to #{card_total}"
 end
     
