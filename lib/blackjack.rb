@@ -57,7 +57,7 @@ def runner
   card_total = initial_round
   if card_total < 21
      hit?(card_total)
-      if hit?(card_total) = "s"
+
     end  
   end
   display_card_total(card_total)   
